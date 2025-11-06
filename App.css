@@ -1,0 +1,98 @@
+/*CONTENEDOR PRINCIPAL*/
+div {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 4rem;
+  background: linear-gradient(145deg, #f0e6ff, #ffe6f0, #e6f0ff);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Comic Sans MS', Helvetica, Arial, sans-serif;
+}
+
+/*TÍTULO*/
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #d176bd;
+}
+
+/*CAMPO DE BÚSQUEDA*/
+input[type="text"] {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border: 2px solid #d0c4ff;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+  font-family: 'Comic Sans MS', Helvetica, Arial, sans-serif;
+}
+
+input[type="text"]:focus {
+  border-color: #ffb6c1;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+}
+
+/*LISTA DE CLIENTES*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #ffffffcc;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(90, 79, 207, 0.2);
+}
+
+strong {
+  color: #d176bd;
+}
+
+li span {
+  color: #ff99aa;
+}
+
+/*MENSAJE SIN RESULTADOS*/
+p {
+  color: #7b6c9f;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/*BOTONES Y SELECTS*/
+button, select {
+  cursor: pointer;
+  font-family: 'Comic Sans MS', Helvetica, Arial, sans-serif;
+  border: 2px solid #d0c4ff;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  transition: 0.3s;
+  background-color: #ffffffcc;
+  color: #7b6c9f;
+}
+
+button:hover, select:hover, select:focus {
+  transform: translateY(-2px);
+  background-color: #d176bd;
+  color: white;
+  box-shadow: 0 4px 10px rgba(209, 118, 189, 0.3);
+  outline: none;
+}
+
+/*ESTILO RESPONSIVE*/
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
